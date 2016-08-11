@@ -65,13 +65,13 @@ body, html {
 <!-- Navbar (sit on top) -->
 <div class="w3-top">
   <ul class="w3-navbar" id="myNavbar">
-  <li><a href="Website.html" class="w3-padding-large w3-hover-purple" style= "color:black;">Home</a></li>
+  <li><a href="index.html" class="w3-padding-large w3-hover-purple" style= "color:black;">Home</a></li>
 <li><a href="Schedule.html"  class="w3-padding-large w3-hover-purple" style= "color:black;">Schedule</a></li>
 
 		<li><a href="closingShows.html" class="w3-padding-large w3-hover-purple" style="color:black;">Closing Shows</a></li>
 
 		<li><a href="Quiz.html"class="w3-padding-large w3-hover-purple" style="color:black;">Quiz</a></li>
-		<li><a href="BBDC.html" class="w3-padding-large w3-hover-purple" style= "color:black;">DC</a></li>
+		<li><a href="DC.html" class="w3-padding-large w3-hover-purple" style= "color:black;">DC</a></li>
 		<li><a href="synopsis.html" class="w3-padding-large w3-hover-purple" style= "color:black;">Synopsis</a></li>
 		<li class="w3-hide-small w3-right">
       <a href="contact.php" style= "color:black;" class="w3-padding-large w3-hover-purple">Contact Me</a>
