@@ -134,49 +134,9 @@ I'm Lauren Divney, a student at a Girls Who Code program in the US. Broadway and
 
 
 
-		<form method="post" action="#" id="form" name="form">
-          <input class="w3-input w3-border w3-hover-light-grey" name= "vname" type="text" placeholder="Name">
-
-          <input class="w3-input w3-border w3-hover-light-grey" name="vemail" type="text" placeholder="Email">
-
-      <textarea <input class="w3-input w3-border w3-hover-light-grey" name="msg" type="text" rows="5" cols="25" placeholder="Comment"></textarea>
-    <input id="send" name= "submit" type="submit" value="Submit" class="w3-btn w3-section w3-right">
-    </div>
-  </div>
-</div>
-
-</form>
+		<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSeeO9ZYGlk0J9kGL3TE2ilXCJ8Q4XHzpPZjLuvIGJpc6edTNg/viewform?embedded=true" width="760" height="500" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe>
 
 
-<h3><?php
-if(isset($_POST["submit"])){
-// Checking For Blank Fields..
-if($_POST["vname"]==""||$_POST["vemail"]==""||$_POST["msg"]==""){
-echo "Fill All Fields..";
-}else{
-// Check if the "Sender's Email" input field is filled out
-$email=$_POST['vemail'];
-// Sanitize E-mail Address
-$email =filter_var($email, FILTER_SANITIZE_EMAIL);
-// Validate E-mail Address
-$email= filter_var($email, FILTER_VALIDATE_EMAIL);
-if (!$email){
-echo "Invalid Sender's Email";
-}
-else{
-$message = $_POST['msg'];
-$headers = 'From:'. $email2 . "\r\n"; // Sender's Email
-$headers .= 'Cc:'. $email2 . "\r\n"; // Carbon copy to Sender
-// Message lines should not exceed 70 characters (PHP rule), so wrap it
-$message = wordwrap($message, 70);
-// Send Mail By PHP Mail Function
-mail("broadwaybeacon@gmail.com", $message, $headers);
-echo "Your mail has been sent successfuly ! Thank you for your input";
-}
-}
-}
-?></h3>
-</div>
 
 
 
